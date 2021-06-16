@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* desaparecer el checkbox */
+        #activar, .desplegable{
+            display: none;
+        }
+        #activar:checked ~ .desplegable{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CSS no hace clic izquierdo o derecho ratón -->
+    <!-- Se hace con JavaScript el sistema de pulsar -->
+
+    <!-- menu desplegable clic - Smartphone/iPad -->
+    <input type="checkbox" id="activar">
+    <label for="activar">
+        <img src="./menu.svg" alt="">
+    </label>
+    <!-- Desplegable -->
+    <section class="desplegable">
+        <ul>
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+        </ul>
+    </section>
+
+</body>
+</html>
